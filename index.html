@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>blackyee-Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+      :root {
+        --clr-1: #ffffff;
+        --clr-4: #00976d;
+        --fs: clamp(2rem, 6vw, 4rem);
+        --ls: clamp(-1.75px, -0.25vw, -3.5px);
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #000;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .aurora-title {
+        font-size: var(--fs);
+        font-weight: 800;
+        letter-spacing: var(--ls);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(
+          90deg,
+          var(--clr-1),
+          var(--clr-4),
+          var(--clr-1)
+        );
+        background-size: 200% 100%;
+        animation: aurora-bg 4s linear infinite;
+      }
+
+      @keyframes aurora-bg {
+        0% {
+          background-position: 100% 0;
+        }
+        100% {
+          background-position: -100% 0;
+        }
+      }
+
+      @media (max-width: 600px) {
+        :root {
+          --fs: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-Poppins">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black z-50 p-4 shadow-lg">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="aurora-title text-2xl">Sankar M</h1>
+        <!--Toggle Bar -->
+        <button id="hamburger-btn" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+        <!-- Nav Menu -->
+        <ul id="nav-menu" class="hidden md:flex space-x-6 items-center">
+          <li><a href="#" class="hover:text-emerald-500">Home</a></li>
+          <li><a href="#" class="hover:text-emerald-500">Experience</a></li>
+          <li class="relative">
+            <button
+              id="resources-btn"
+              class="hover:text-emerald-500 flex items-center"
+            >
+              Category ▾
+            </button>
+            <ul
+              id="resources-menu"
+              class="absolute left-0 mt-2 w-48 bg-emerald-800 text-white rounded-xl shadow-lg hidden py-2"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg"
+                  >Games</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg"
+                  >AR</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./contact_us.html" class="hover:text-emerald-500"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600"
+            >
+              Play
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul id="mobile-menu" class="md:hidden hidden mt-4 space-y-4">
+        <li><a href="#" class="block hover:text-emerald-500">Home</a></li>
+        <li><a href="#" class="block hover:text-emerald-500">Experience</a></li>
+        <li>
+          <button
+            id="mobile-resources-btn"
+            class="w-full text-left hover:text-emerald-500"
+          >
+            Category ▾
+          </button>
+          <ul id="mobile-resources-menu" class="hidden mt-2 space-y-2">
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-emerald-700 rounded-lg"
+                >Games</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-emerald-700 rounded-lg"
+                >AR</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./contact_us.html" class="block hover:text-emerald-500"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-block bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600"
+          >
+            Play
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<main class="pt-32 px-4 text-center max-w-4xl mx-auto">
+  <p class="text-2xl text-emerald-400">Welcome to</p>
+  <h1 class="aurora-title text-5xl sm:text-6xl mb-4">Blackyee's Studio</h1>
+
+  <p class="text-lg sm:text-xl text-gray-300 mt-6 leading-relaxed">
+    I'm <span class="text-emerald-400 font-semibold">Sankar</span> — a Unity developer who’s all about creating meaningful,
+    fun, and immersive experiences — whether it's a stylized<span class="text-white font-medium">game</span> or an 
+    <span class="text-white font-medium">AR project</span> that blends the real and digital worlds.<br><br>
+    I enjoy taking an idea, shaping it with code, adding a bit of design magic, and turning it into something people can actually 
+    <em>feel</em>. My goal? To make experiences that are not just interactive, but memorable.
+  </p>
+  
+
+  <div class="mt-8">
+    <a
+      href="#"
+      class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition" >
+      View My Work
+    </a>
+  </div>
+
+  <div class="mt-12">
+    <img
+      src=""
+      alt="Featured Project"
+      class="w-full max-w-3xl rounded-2xl shadow-xl mx-auto"
+    />
+    <p class="mt-4 text-gray-400">Explore one of my latest creation</p>
+  </div>
+</main>
+
+    <!-- Scripts -->
+    <script>
+      const resourcesBtn = document.getElementById("resources-btn");
+      const resourcesMenu = document.getElementById("resources-menu");
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navMenu = document.getElementById("nav-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileResourcesBtn = document.getElementById(
+        "mobile-resources-btn"
+      );
+      const mobileResourcesMenu = document.getElementById(
+        "mobile-resources-menu"
+      );
+
+      resourcesBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        resourcesMenu.classList.toggle("hidden");
+      });
+
+      hamburgerBtn?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      mobileResourcesBtn?.addEventListener("click", () => {
+        mobileResourcesMenu.classList.toggle("hidden");
+      });
+
+      // Close menus on click outside
+      document.addEventListener("click", () => {
+        resourcesMenu?.classList.add("hidden");
+        mobileResourcesMenu?.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>

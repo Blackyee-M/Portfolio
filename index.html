@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>blackyee-Portfolio</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
@@ -20,9 +21,9 @@
         background-color: #000;
         color: #fff;
         font-family: "Poppins", sans-serif;
-        text-align: center;
         margin: 0;
         padding: 0;
+        text-align: center;
       }
 
       .aurora-title {
@@ -32,12 +33,7 @@
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: linear-gradient(
-          90deg,
-          var(--clr-1),
-          var(--clr-4),
-          var(--clr-1)
-        );
+        background-image: linear-gradient(90deg, var(--clr-1), var(--clr-4), var(--clr-1));
         background-size: 200% 100%;
         animation: aurora-bg 4s linear infinite;
       }
@@ -62,64 +58,25 @@
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 w-full bg-black z-50 p-4 shadow-lg">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <!-- Logo -->
         <h1 class="aurora-title text-2xl">Sankar M</h1>
-        <!--Toggle Bar -->
         <button id="hamburger-btn" class="md:hidden focus:outline-none">
-          <svg
-            class="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16">
-            </path>
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <!-- Nav Menu -->
         <ul id="nav-menu" class="hidden md:flex space-x-6 items-center">
           <li><a href="./index.html" class="hover:text-emerald-500">Home</a></li>
           <li><a href="./Experience.html" class="hover:text-emerald-500">Experience</a></li>
           <li class="relative">
-            <button
-              id="resources-btn"
-              class="hover:text-emerald-500 flex items-center">
-              Category ▾
-            </button>
-            <ul
-              id="resources-menu"
-              class="absolute left-0 mt-2 w-48 bg-emerald-800 text-white rounded-xl shadow-lg hidden py-2">
-              <li>
-                <a
-                  href="./Games.html"
-                  class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">
-                  Games
-                </a>
-              </li>
-              <li>
-                <a
-                  href="./AR.html"
-                  class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">
-                  AR
-                </a>
-              </li>
+            <button id="resources-btn" class="hover:text-emerald-500 flex items-center">Category ▾</button>
+            <ul id="resources-menu" class="absolute left-0 mt-2 w-48 bg-emerald-800 text-white rounded-xl shadow-lg hidden py-2">
+              <li><a href="./Games.html" class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">Games</a></li>
+              <li><a href="./AR.html" class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">AR</a></li>
             </ul>
           </li>
+          <li><a href="./Contact.html" class="hover:text-emerald-500">Contact</a></li>
           <li>
-            <a href="./Contact.html" class="hover:text-emerald-500"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              href="./Play.html"
-              class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600">
-              Play
-            </a>
+            <a href="./Play.html" class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600">Play</a>
           </li>
         </ul>
       </div>
@@ -129,119 +86,141 @@
         <li><a href="./index.html" class="block hover:text-emerald-500">Home</a></li>
         <li><a href="./Experience.html" class="block hover:text-emerald-500">Experience</a></li>
         <li>
-          <button
-            id="mobile-resources-btn" class="w-full hover:text-emerald-500">
-            Category ▾
-          </button>
-          <ul id="mobile-resources-menu" class="absolute left-1/4 mt-2 w-48 bg-emerald-800 text-white rounded-xl shadow-lg hidden py-2"
-          >
-            <li>
-              <a href="./Games.html"
-                class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">
-                Games
-              </a>
-            </li>
-            <li>
-              <a
-                href="./AR.html"
-                class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">
-                AR
-              </a>  
-            </li>
+          <button id="mobile-resources-btn" class="w-full hover:text-emerald-500">Category ▾</button>
+          <ul id="mobile-resources-menu" class="absolute left-1/4 mt-2 w-48 bg-emerald-800 text-white rounded-xl shadow-lg hidden py-2">
+            <li><a href="./Games.html" class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">Games</a></li>
+            <li><a href="./AR.html" class="block px-6 py-3 hover:bg-emerald-200 hover:text-black rounded-lg">AR</a></li>
           </ul>
         </li>
+        <li><a href="./Contact.html" class="block hover:text-emerald-500">Contact</a></li>
         <li>
-          <a href="./Contact.html" class="block hover:text-emerald-500"
-            >Contact</a
-          >
-        </li>
-        <li>
-          <a
-            href="./Play.html"
-            class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600"
-          >
-            Play
-          </a>
+          <a href="./Play.html" class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600">Play</a>
         </li>
       </ul>
     </nav>
 
     <!-- Main Content -->
-<main class="pt-32 px-4 text-center max-w-4xl mx-auto">
-  <p class="text-2xl text-emerald-400">Welcome to</p>
-  <h1 class="aurora-title text-5xl sm:text-6xl mb-4">Blackyee's Studio</h1>
+    <main id="#About Myself"   class="pt-20 px-4 text-center max-w-6xl mx-auto">
+      <p class="text-2xl text-emerald-400">Welcome to</p>
+      <h1 class="aurora-title text-5xl sm:text-6xl mb-4">Blackyee's Studio</h1>
+      <p class="mt-4 text-gray-400">Creative Portfolio</p>
+      <p class="text-lg text-left sm:text-xl text-gray-300 mt-6 leading-relaxed">
+        I'm <span class="text-emerald-400 font-semibold">Sankar</span> Unity developer focused on building meaningful,
+        fun, and immersive experiences whether it's a stylized <span class="text-white font-medium">game</span> or an
+        <span class="text-white font-medium">AR project</span> blending the real and digital worlds.<br><br>
+        With 3+ years of Unity experience, I specialize in AR development, gameplay programming, and immersive UI design.
+      </p>
+      <div class="mt-12">
+        <h2 class="text-left text-2xl text-emerald-200 mb-4">Tool Kits :</h2>
+        <div class="grid grid-cols-2 gap-4 text-center text-white">
+          <div class="bg-emerald-800/40 p-3 rounded-xl">Firebase</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">DoTween</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">Vuforia</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">AR Foundation</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">Google Play Instant AR</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">WebAR</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">Shader Graph</div>
+          <div class="bg-emerald-800/40 p-3 rounded-xl">Animation</div>
 
-  <p class="text-lg sm:text-xl text-gray-300 mt-6 leading-relaxed">
-    I'm <span class="text-emerald-400 font-semibold">Sankar</span> — a Unity developer who’s all about creating meaningful,
-    fun, and immersive experiences — whether it's a stylized<span class="text-white font-medium">game</span> or an 
-    <span class="text-white font-medium">AR project</span> that blends the real and digital worlds.<br><br>
-    I enjoy taking an idea, shaping it with code, adding a bit of design magic, and turning it into something people can actually 
-    <em>feel</em>. My goal? To make experiences that are not just interactive, but memorable.
-  </p>
-  
 
-  <div class="mt-8">
-    <a
-      href="#"
-      class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition" >
-      View My Work
-    </a>
-  </div>
+        </div>
+      </div>
+      <p id="toggleToolsBtn" class="text-sm text-gray-400 mt-2 cursor-pointer" 
+   onclick="
+     const moreTools = document.getElementById('moreTools');
+     const btn = document.getElementById('toggleToolsBtn');
+     moreTools.classList.toggle('hidden');
+     btn.textContent = moreTools.classList.contains('hidden') ? '+ Show more tools' : '− Show less tools';
+   ">
+  + Show more tools
+</p>
 
-  <div class="mt-12">
-    <img
-      src=""
-      alt="Featured Project"
-      class="w-full max-w-3xl rounded-2xl shadow-xl mx-auto"
-    />
-    <p class="mt-4 text-gray-400">Explore one of my latest creation</p>
-  </div>
-</main>
+<div id="moreTools" class="hidden grid grid-cols-2 gap-4 text-center text-white mt-4">
+  <div class="bg-emerald-800/40 p-3 rounded-xl">Photon Network (PUN)</div>
+  <div class="bg-emerald-800/40 p-3 rounded-xl">TextMesh Pro</div>
+  <div class="bg-emerald-800/40 p-3 rounded-xl">Unity Timeline</div>
+  <div class="bg-emerald-800/40 p-3 rounded-xl">Unity Recorder</div>
+</div>
 
-    <!-- Scripts -->
+
+      <div class="mt-12">
+        <h2 class="text-left text-2xl text-emerald-200">Education :</h2>
+        <p class="text-center text-xl"> B.Sc Computer Science @ Erode, Tamilnadu &<br> M.Sc Game Technology @ Bangalore, Karnataka.
+        </p>
+      </div>
+      <div class="mt-12">
+        <a href="#about-section" class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-4  px-4 rounded-lg hover:bg-emerald-600">
+          View My Work
+        </a>
+      </div>
+      <div class="mt-20 animate-bounce">
+        <a href="#about-section">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+      </div>
+      <div id="about-section" class="relative z-20 opacity-0 translate-y-12 transition-all duration-700 ease-out py-32 sm:py-40 px-6 sm:px-10 md:px-16 max-w-6xl mx-auto">
+        <img src="./Images/EOH_tittle.png" alt="Featured Project" class="w-full rounded-2xl shadow-xl mx-auto" />
+        <p class="mt-4 text-gray-400">Explore one of my latest creations</p>
+        <div class="mt-12">
+          <h2 class="text-left text-xl text-emerald-400">Core Concept</h2>
+          <p class="text-left">
+            You take on the role of a powerful Witch with time-rewinding abilities. She can manipulate time to destroy or restore what’s broken. 
+            Through these powers, she navigates a fractured world in search of the memories of a loved one lost to the collapse of time.
+          </p>
+        </div>
+      </div>
+    </main>
+
     <script>
-      const resourcesBtn = document.getElementById("resources-btn");
-      const resourcesMenu = document.getElementById("resources-menu");
-      const hamburgerBtn = document.getElementById("hamburger-btn");
-      const navMenu = document.getElementById("nav-menu");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const mobileResourcesBtn = document.getElementById("mobile-resources-btn");
-      const mobileResourcesMenu = document.getElementById("mobile-resources-menu");
+      document.addEventListener("DOMContentLoaded", function () {
+        const resourcesBtn = document.getElementById("resources-btn");
+        const resourcesMenu = document.getElementById("resources-menu");
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const navMenu = document.getElementById("nav-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileResourcesBtn = document.getElementById("mobile-resources-btn");
+        const mobileResourcesMenu = document.getElementById("mobile-resources-menu");
+        const aboutSection = document.getElementById("about-section");
     
-      // Desktop dropdown
-      resourcesBtn?.addEventListener("click", (e) => {
-        e.stopPropagation();
-        resourcesMenu.classList.toggle("hidden");
-      });
+        // Menu toggles
+        resourcesBtn?.addEventListener("click", (e) => {
+          e.stopPropagation();
+          resourcesMenu.classList.toggle("hidden");
+        });
     
-      // Mobile menu toggle
-      hamburgerBtn?.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
+        hamburgerBtn?.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
     
-      // Mobile category dropdown toggle
-      mobileResourcesBtn?.addEventListener("click", (e) => {
-        e.stopPropagation();
-        mobileResourcesMenu.classList.toggle("hidden");
-      });
+        mobileResourcesBtn?.addEventListener("click", (e) => {
+          e.stopPropagation();
+          mobileResourcesMenu.classList.toggle("hidden");
+        });
     
-      // Close dropdowns when clicking outside
-      document.addEventListener("click", (e) => {
-        // Check if click is outside both buttons and menus
-        if (
-          !resourcesBtn?.contains(e.target) &&
-          !resourcesMenu?.contains(e.target)
-        ) {
-          resourcesMenu?.classList.add("hidden");
-        }
+        document.addEventListener("click", (e) => {
+          if (!resourcesBtn?.contains(e.target) && !resourcesMenu?.contains(e.target)) {
+            resourcesMenu?.classList.add("hidden");
+          }
+          if (!mobileResourcesBtn?.contains(e.target) && !mobileResourcesMenu?.contains(e.target)) {
+            mobileResourcesMenu?.classList.add("hidden");
+          }
+        });
     
-        if (
-          !mobileResourcesBtn?.contains(e.target) &&
-          !mobileResourcesMenu?.contains(e.target)
-        ) {
-          mobileResourcesMenu?.classList.add("hidden");
-        }
+        // Scroll behavior: show section when past threshold, hide only when at top
+        const showThreshold = 300;
+    
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.scrollY;
+    
+          if (currentScroll > showThreshold) {
+            aboutSection.classList.remove("opacity-0", "translate-y-12");
+          } else if (currentScroll <= 10) {
+            aboutSection.classList.add("opacity-0", "translate-y-12");
+          }
+        });
       });
     </script>
-    
+  </body>
 </html>

@@ -59,7 +59,7 @@
     </style>
   </head>
   <body class="bg-black text-white font-Poppins">
-    <!-- Navbar -->
+
     <nav class="fixed top-0 left-0 w-full bg-black z-50 p-4 shadow-lg">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Logo -->
@@ -111,11 +111,6 @@
             </ul>
           </li>
           <li>
-            <a href="./Contact.html" class="hover:text-emerald-500"
-              >Contact</a
-            >
-          </li>
-          <li>
             <a
               href="./Play.html"
               class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600">
@@ -152,11 +147,6 @@
           </ul>
         </li>
         <li>
-          <a href="./Contact.html" class="block hover:text-emerald-500"
-            >Contact</a
-          >
-        </li>
-        <li>
           <a
             href="./Play.html"
             class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600"
@@ -166,8 +156,51 @@
         </li>
       </ul>
     </nav>
+    <main class="pt-20 px-4 text-center max-w-6xl mx-auto">
+      <div class="mt-8">
+        <h2 class="text-left text-2xl text-emerald-400 mb-4">ScreenRecords:</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <video controls class="mt-12 w-full h-auto rounded-lg shadow">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mt-12 flex items-center">
+            <p class="text-lg">
+              This is the descriptive text about the video. You can add titles, paragraphs, or any other content here to explain or complement the video.
+            </p>
+          </div>
+          
+          <div class="mt-12 flex items-center">
+            <p class="text-lg">
+              This is the descriptive text about the video. You can add titles, paragraphs, or any other content here to explain or complement the video.
+            </p>
+          </div>
+         
+          <div>
+            <video controls class="mt-12 w-full h-auto rounded-lg shadow">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
 
-    <!-- Scripts -->
+          <div>
+            <video controls class="mt-12 w-full h-auto rounded-lg shadow">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="mt-12 flex items-center">
+            <p class="text-lg">
+              This is the descriptive text about the video. You can add titles, paragraphs, or any other content here to explain or complement the video.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
     <script>
       const resourcesBtn = document.getElementById("resources-btn");
       const resourcesMenu = document.getElementById("resources-menu");
@@ -176,27 +209,18 @@
       const mobileMenu = document.getElementById("mobile-menu");
       const mobileResourcesBtn = document.getElementById("mobile-resources-btn");
       const mobileResourcesMenu = document.getElementById("mobile-resources-menu");
-    
-      // Desktop dropdown
       resourcesBtn?.addEventListener("click", (e) => {
         e.stopPropagation();
         resourcesMenu.classList.toggle("hidden");
       });
-    
-      // Mobile menu toggle
       hamburgerBtn?.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
       });
-    
-      // Mobile category dropdown toggle
       mobileResourcesBtn?.addEventListener("click", (e) => {
         e.stopPropagation();
         mobileResourcesMenu.classList.toggle("hidden");
       });
-    
-      // Close dropdowns when clicking outside
       document.addEventListener("click", (e) => {
-        // Check if click is outside both buttons and menus
         if (
           !resourcesBtn?.contains(e.target) &&
           !resourcesMenu?.contains(e.target)

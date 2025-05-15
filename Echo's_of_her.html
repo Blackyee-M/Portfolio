@@ -58,9 +58,8 @@
       }
     </style>
   </head>
-  <body class="bg-black text-white font-Poppins">
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-black z-50 p-4 shadow-lg">
+<body>
+     <nav class="fixed top-0 left-0 w-full bg-black z-50 p-4 shadow-lg">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <!-- Logo -->
         <h1 class="aurora-title text-2xl">Sankar M</h1>
@@ -157,89 +156,47 @@
         </li>
       </ul>
     </nav>
-
-    <!-- Main Content -->
-    <main id="#About Myself"   class="pt-20 px-4 text-center max-w-6xl mx-auto">
-      <p class="text-2xl text-emerald-400">Welcome to</p>
-      <h1 class="aurora-title text-2xl sm:text-6xl mb-4">Blackyee's Studio</h1>
-      <p class="mt-4 text-gray-400">Creative Portfolio</p>
-      <p class="text-lg text-left text-gray-300 mt-6 leading-relaxed">
-        I am a Unity developer focused on building meaningful,
-        fun, and immersive experiences whether it's a stylized <span class="text-emerald-400 font-medium">Game</span> or an
-        <span class="text-emerald-400  font-medium">AR project</span> blending the real and digital worlds.<br><br>
-        With over<span class="text-emerald-400  font-medium"> Three years</span> of Unity experience, I specialize in AR development, gameplay programming, and immersive UI design.
-      </p>
-      <div class="mt-8">
-        <h2 class="text-left text-xl text-emerald-200 mb-4">Tool Kits :</h2>
-        <div class="grid grid-cols-2 gap-2 text-center text-white">
-          <div class="bg-emerald-800/20 p-3 rounded-xl">Firebase</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">DoTween</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">Vuforia</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">AR Foundation</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">Google Play Instant AR</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">WebAR</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">Shader Graph</div>
-          <div class="bg-emerald-800/20 p-3 rounded-xl">Photon</div>
-
-        </div>
-      </div>
-      <p id="toggleToolsBtn" class="text-sm text-gray-400 mt-2 cursor-pointer" 
-   onclick="
-     const moreTools = document.getElementById('moreTools');
-     const btn = document.getElementById('toggleToolsBtn');
-     moreTools.classList.toggle('hidden');
-     btn.textContent = moreTools.classList.contains('hidden') ? '+ Show more tools' : '− Show less tools';
-   ">
-  + Show more tools
-</p>
-
-<div id="moreTools" class="hidden grid grid-cols-2 gap-2 text-center text-white mt-4">
-  <div class="bg-emerald-800/20 p-3 rounded-xl">Unity 2D Rig </div>
-  <div class="bg-emerald-800/20 p-3 rounded-xl">Unity 2D Animation</div>
-  <div class="bg-emerald-800/20 p-3 rounded-xl">Unity Timeline</div>
-</div>
-
-
-      <div class="mt-4">
-        <h2 class="text-left text-2xl text-emerald-200">Education :</h2>
-        <p class="text-center text-xl"> B.Sc Computer Science @ Tamilnadu, India &<br> M.Sc Game Technology @ Karnataka, India.
-        </p>
-      </div>
-      <div id="moreTools" class="grid grid-cols-2 gap-4 text-center text-white mt-12">
-        <a href="#about-section" class="w-[180px] mx-auto bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-4 px-4 rounded-lg hover:bg-emerald-600">
-          View My Work
-        </a>
-        <a href="./docs/Resume.pdf" download="Sankar_M_Resume.pdf" class="w-[180px] mx-auto bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-4 px-4 rounded-lg hover:bg-emerald-600">
-          Resume
-        </a>
-      </div>
-      <div class="mt-20 animate-bounce">
-        <a href="#about-section">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-          </svg>
-        </a>
-      </div>
-      <div id="about-section" class="relative z-20 opacity-0 translate-y-12 transition-all duration-700 ease-out py-32 sm:py-40 px-6 sm:px-10 md:px-16 max-w-6xl mx-auto">
-        <img src="./Images/EOH_tittle.png" alt="Featured Project" class="w-full rounded-2xl shadow-xl mx-auto" />
-        <p class="mt-4 text-gray-400">Explore one of my latest creations</p>
-        <div class="mt-12">
-          <h2 class="text-left text-xl text-emerald-400">Core Concept</h2>
+    <main id="#About Game"   class="pt-20 px-4 text-center max-w-6xl mx-auto">
+      <h1 class="aurora-title text-2xl sm:text-6xl mb-4">Echoes Of Her</h1>
+      <h2 class="text-left text-xl text-emerald-400">Core Concept</h2>
           <p class="text-left">
             You take on the role of a powerful Witch with time-rewinding abilities. She can manipulate time to destroy or restore what’s broken. 
             Through these powers, she navigates a fractured world in search of the memories of a loved one lost to the collapse of time.
           </p>
+          <br>
+        <h2 class="text-left text-xl text-emerald-400">How it Started: </h2>
+        <p class="text-left">
+            The idea for Echo's Of Her started with a mechanic I once scrapped back in college — time rewinding. 
+            I had built it purely as a feature, but it always felt like it deserved more. I wanted to give it meaning. 
+            That’s when the story began to form — a witch who rewinds time not just to alter the world, but to search for what she’s lost, to question what she’s gained, and to confront where everything went wrong. 
+            It became more than a mechanic; it became a way to explore regret, purpose, and the weight of trying to fix what may not be fixable.
+        </p>
+        <br>
+        <p class="text-sm text-gray-400 text-center">
+           If you would like to know more about this game, you can go through the GDD.
+        </p>
+        <br>
+        <div class = "mt-12">
+        <a href="./docs/Echoes of Her - GDD.pdf" download="GDD_Echo's Of Her.pdf" class="w-[180px] mx-auto bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-4 px-4 rounded-lg hover:bg-emerald-600">
+          Download
+        </a>
         </div>
-      <div class="mt-20">
-         <a href="./Echo's_of_her.html" class="bg-emerald-500 shadow-lg shadow-emerald-500/50 text-white font-bold py-4 px-10 rounded-lg hover:bg-emerald-600">
-            In Details
-            </a>
-      </div>
-      </div>
+         <div>
+            <video controls class="mt-12 w-full h-auto rounded-xl shadow-xl shadow-emerald-800 hover:shadow-emerald-500 transition-shadow duration-300 ease-in-out">
+            <source src="./videos/Time_Wiz.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class ="mt-12">
+            <p>
+                The video above is from a college project where I first built the time-rewind mechanic.
+                 I didn’t end up using it back then, but now it finally found its place in 
+                 <span class="text-lg text-emerald-500 italic">Echoes Of Her</span>.
+            </p>
 
-     
+          </div>
     </main>
-
+</body>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const resourcesBtn = document.getElementById("resources-btn");
@@ -289,8 +246,7 @@
         });
       });
     </script>
-  </body>
-  <footer class = "bg-black text-white text-center py-20 relative">
+      <footer class = "bg-black text-white text-center py-20 relative">
     <div >
       <h1 class = "px-12 font-bold text-2xl">
         <span class="text-emerald-400 text-2xl">Contact </span>Details

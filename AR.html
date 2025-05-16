@@ -147,29 +147,41 @@
   <div class="mt-8">
     <h2 class="text-left text-2xl text-emerald-400 mb-4">ScreenRecords:</h2>
 
-    <!-- 4.2 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-8">
-      <div>
-        <video controls class="mt-12 w-full h-auto rounded-xl shadow-xl shadow-emerald-800 hover:shadow-emerald-500 transition-shadow duration-300 ease-in-out">
-          <source src="./videos/ComboMove.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="mt-12 flex items-center">
-        <div class="text-center">
-          <p class="text-2xl">
-            <span class="text-emerald-400 block">Attack Pattern</span>
-            Combo moves & VFX
-          </p>
-          <p class="text-sm mt-4 text-justify max-w-xl">
-            I created an attack combo system in Unity that blends animations for smooth transitions between hits. 
-            Visual effects were added to enhance the impact of each axe slash, along with footstep particles that trigger during movement to give a grounded feel during combat. 
-            The result is a more dynamic and responsive melee attack experience.
-          </p>
-        </div>
-      </div>
+   <!-- AR Game -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-8">
+  <div class="relative">
+    <video controls class="mt-12 w-full h-auto rounded-xl shadow-xl shadow-emerald-800 hover:shadow-emerald-500 transition-shadow duration-300 ease-in-out">
+      <source src="./videos/.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Download Button -->
+    <a href="https://drive.google.com/uc?export=download&id=1yI1B0YLBkUURKzFiFsLlIdUoSYVJF9N5"
+       target="_blank"
+       class="absolute top-4 right-4 bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-emerald-500 transition duration-300"
+       title="Download App(android)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+      </svg>
+    </a>
+  </div>
+  <div class="mt-12 flex items-center">
+    <div class="text-center">
+      <p class="text-2xl">
+        <span class="text-emerald-400 block">BoxBlastAR</span>
+        AR GamePlay
+      </p>
+      <p class="text-sm mt-4 text-justify max-w-xl">
+        I developed this AR game end-to-end with a simple “shoot the box” gameplay concept. 
+        Using Vuforia’s Ground Plane tracking, the game anchors gameplay elements in the real world for a stable AR experience.
+        I integrated Firebase Authentication, Realtime Database, and Storage to manage user data and progress. 
+        A leaderboard system tracks high scores, and the entire interface is designed with a clean, intuitive UI/UX for smooth interaction.
+      </p>
     </div>
-    <hr class="border-t border-emerald-500 opacity-30 my-12">
+  </div>
+</div>
+<hr class="border-t border-emerald-500 opacity-30 my-12">
 
     <!-- Toyota Fortuner -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-8">

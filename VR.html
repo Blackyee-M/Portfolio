@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>blackyee-Portfolio</title>
+    <title>AR-Portfolio</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
@@ -155,37 +155,72 @@
        
       </ul>
     </nav>
-    <main class="pt-32 px-4 text-center max-w-6xl mx-auto">
-    <div class="mt-12">
-      <h1 class="text-left font-bold text-2xl text-emerald-400">Work Experience :</h1>
-      <h1 class ="text-left text-xl mt-12">I have 3 years of hands-on experience in UNITY</h1>
+<main class="pt-20 px-4 text-center max-w-6xl mx-auto">
+  <div class="mt-8">
+    <h2 class="text-left text-2xl text-emerald-400 mb-4">ScreenRecords:</h2>
 
-      <h2 class ="text-center font-bold text-2xl mt-12 text-emerald-200">4 Point 2 Technologies Pvt Ltd — 2024 to Current</h2>
-      <h2 class ="text-center font-bold text-2xl text-emerald-200">Role: Unity AR Developer </h2> 
-      <p class = "text-left mt-12">º Worked on end-to-end AR projects, from concept to deployment</p>
-      <p class = "text-left ">º Published more than 5 applications in the AppStore</p>
-      <p class = "text-left ">º Gained significant hands-on experience across multiple stages of development</p>
-      <p class = "text-left ">º Handled everything from UI design to backend/database integration in these projects</p>
-
-      <h2 class ="text-center font-bold text-2xl mt-12 text-emerald-200">ICAT Design and Media College — 2023 to 2024</h2>
-      <h2 class ="text-center font-bold text-2xl text-emerald-200">Role : Unity Lecturer</h2> 
-      <p class = "text-left mt-12">º Conducted sessions for the students of the Game department & other departments</p>
-      <p class = "text-left ">º Provided new technology of development and technical art knowledge in the Unity Engine to the students</p>
-      <p class = "text-left ">º The goal is to help them learn the latest technology in development and technical art within the Unity Engine</p>
-
-      <h2 class ="text-center font-bold text-2xl mt-12 text-emerald-200">Booxpand (Team @ Eficence) — 2022 to 2023</h2>
-      <h2 class ="text-center font-bold text-2xl text-emerald-200">Role : AR Developer</h2>
-      <p class = "text-left mt-12">º Was a solo developer in a 6-member team formed to build a startup idea</p>
-      <p class = "text-left ">º Introduced the augmented reality application to the kids and made their learning more interesting</p>
-      <p class = "text-left ">º Designed and developed AR experiences to engage children in educational content, making learning more immersive and fun</p>
+   <!--VR Game -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-8">
+      <div class="relative">
+        <video controls class="mt-12 w-full max-w-[800px] h-auto max-h-[450px]   rounded-xl shadow-xl shadow-emerald-800 hover:shadow-emerald-500 transition-shadow duration-300 ease-in-out">
+          <source src="./videos/screen-20250516-155958.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="mt-12 flex items-center">
+        <div class="text-center">
+          <p class="text-2xl">
+            <span class="text-emerald-400 block">Pazi</span>
+            AR GamePlay 
+          </p>
+          <p class="text-sm mt-4 text-justify max-w-xl">
+          </p>
+        </div>
+      </div>
     </div>
+    <hr class="border-t border-emerald-500 opacity-30 my-12">
 
-    <h1 class="text-left font-bold mt-20 text-2xl text-emerald-400">Internship :</h1>
-    <h2 class ="text-center font-bold text-2xl mt-12 text-emerald-200">DevDen - in 2022</h2>
-      <h2 class ="text-center font-bold text-2xl text-emerald-200">Role : AR Developer</h2>
-      <p class = "text-left mt-12">º I worked and integrated functionality on AR-based projects.</p>
-      <p class = "text-left ">º  Gained insight and understanding on usage and implementation of my coding skills while working on different functionality</p>
-  </main>
+     <!-- AR Game -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-8">
+      <div class="mt-12 flex items-center">
+        <div class="text-center">
+          <p class="text-2xl">
+            <span class="text-emerald-400 block">AR Showcase Hub</span>
+            Modular AR Viewer for Multiple Categories
+          </p>
+          <p class="text-sm mt-4 text-justify max-w-xl">
+            I built this flexible AR application using Unity and the Vuforia Engine to support a wide range of use cases across various domains 
+            — including automobiles, real estate, education, products, politics, and even plant and animal visualization.
+            The app features a dynamic and adaptive UI designed to work smoothly across different mobile devices. 
+            I implemented a sliding pagination system to allow users to navigate between categories seamlessly, making the user experience clean, modular, and intuitive.
+          </p>
+        </div>
+      </div>
+      <div class="relative">
+        <video controls class="mt-12 w-full max-w-[800px] h-auto max-h-[450px]   rounded-xl shadow-xl shadow-emerald-800 hover:shadow-emerald-500 transition-shadow duration-300 ease-in-out">
+          <source src="./videos/.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="flex justify-end mt-4">
+          <a href="./apps/BoxBlastAR.apk" download="BoxBlastAR.apk"
+            class="bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-emerald-500 transition duration-300 flex items-center gap-2"
+            title="Download App (Android)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+            </svg>
+            <span class="text-sm">Download APK</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    <hr class="border-t border-emerald-500 opacity-30 my-12">
+  </div>
+</main>
+    <div class="mt-12">
+    </div>
   </body>
     <!-- Scripts -->
     <script>
@@ -251,5 +286,4 @@
     </p>
   </div>
 </footer>
-    
 </html>
